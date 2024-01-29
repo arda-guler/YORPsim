@@ -54,7 +54,7 @@ def read_model_file(filename):
 
     face_instances = []
     for i in range(len(face_positions)):
-        new_face = Face(areas[i], normals[i], face_positions[i], 0.2, 1000, 273)
+        new_face = Face(areas[i], normals[i], face_positions[i], 0.2, 0.2, 1000, face_point_positions[i], 273)
         face_instances.append(new_face)
 
     return face_instances
